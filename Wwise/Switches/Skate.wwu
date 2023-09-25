@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C57D496C-5AEA-4FE0-8141-912CA168B36B}" SchemaVersion="110">
+	<Switches>
+		<WorkUnit Name="Skate" ID="{C57D496C-5AEA-4FE0-8141-912CA168B36B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Velocity" ID="{E028A417-4AF2-4D3A-B5F2-34EA2E175937}">
+					<ChildrenList>
+						<Switch Name="Medium" ID="{D252F091-F19C-4BD4-86E1-FB11D452B539}"/>
+						<Switch Name="Slow" ID="{43341D96-6358-4225-93BC-263E8E3F60AF}"/>
+						<Switch Name="Fast" ID="{7C97DEA4-666B-4B1A-87B6-434795980C7C}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

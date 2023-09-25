@@ -1,6 +1,302 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1D034A2E-7F0F-459E-98FC-94FB0689434E}" SchemaVersion="110">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{1D034A2E-7F0F-459E-98FC-94FB0689434E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1D034A2E-7F0F-459E-98FC-94FB0689434E}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="New Sequence Container" ID="{F89C0AAA-BE82-463B-8BD4-C9AB683D28BD}" ShortID="218858162">
+					<PropertyList>
+						<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6BD3CF76-0F46-4C1D-B16B-4B7C3A773BCF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EE627FCB-B415-43B1-B0F4-5F0A8B1A3A4A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Skate_Jump" ID="{203A364A-4D82-4CE1-9C99-F1C4720BDCA0}" ShortID="295679026">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6BD3CF76-0F46-4C1D-B16B-4B7C3A773BCF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EE627FCB-B415-43B1-B0F4-5F0A8B1A3A4A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Skate_Start" ID="{560F7DC4-F8BB-4E24-9CD4-88FDE554F010}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.241048400092081"/>
+										<Property Name="FadeOutShape" Type="int16" Value="1"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Skate\Skate_Start.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="740085653"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Skate_Start" ID="{560F7DC4-F8BB-4E24-9CD4-88FDE554F010}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Skate_FeetLand" ID="{F066D393-746D-489B-8882-D81DEC15B644}" ShortID="743735397">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6BD3CF76-0F46-4C1D-B16B-4B7C3A773BCF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EE627FCB-B415-43B1-B0F4-5F0A8B1A3A4A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Skate_FeetLand" ID="{0AAB0148-E292-45AA-9E61-03CA0AC37F11}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.36370829459374"/>
+										<Property Name="FadeOutShape" Type="int16" Value="1"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.050047383364027"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.60041889158576"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Skate\Skate_FeetLand.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="739037963"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Skate_FeetLand" ID="{0AAB0148-E292-45AA-9E61-03CA0AC37F11}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Skate_BoardLand" ID="{F6B9F455-0FC2-4545-8A48-2BF6CB7FD321}" ShortID="477226573">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6BD3CF76-0F46-4C1D-B16B-4B7C3A773BCF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EE627FCB-B415-43B1-B0F4-5F0A8B1A3A4A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Skate_BoardLand" ID="{B650C7E6-F856-4D52-B3E2-8009E7A678DD}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0292158705102668"/>
+										<Property Name="FadeOutShape" Type="int16" Value="1"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.167991255434034"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.786393847901346"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Skate\Skate_BoardLand.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="232628920"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Skate_BoardLand" ID="{B650C7E6-F856-4D52-B3E2-8009E7A678DD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<Playlist>
+						<ItemRef Name="Skate_Jump" ID="{203A364A-4D82-4CE1-9C99-F1C4720BDCA0}"/>
+						<ItemRef Name="Skate_BoardLand" ID="{F6B9F455-0FC2-4545-8A48-2BF6CB7FD321}"/>
+						<ItemRef Name="Skate_FeetLand" ID="{F066D393-746D-489B-8882-D81DEC15B644}"/>
+					</Playlist>
+				</RandomSequenceContainer>
+				<SwitchContainer Name="Skate_Roll" ID="{F3E546A8-2C41-4F59-B72B-D961EF660D4C}" ShortID="159114060">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6BD3CF76-0F46-4C1D-B16B-4B7C3A773BCF}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Slow" ID="{43341D96-6358-4225-93BC-263E8E3F60AF}" WorkUnitID="{C57D496C-5AEA-4FE0-8141-912CA168B36B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EE627FCB-B415-43B1-B0F4-5F0A8B1A3A4A}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Velocity" ID="{E028A417-4AF2-4D3A-B5F2-34EA2E175937}" WorkUnitID="{C57D496C-5AEA-4FE0-8141-912CA168B36B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Skate_Roll_Slow" ID="{638DF4E8-A5F1-42F7-BF70-4D06B2581E19}" ShortID="968154735">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6BD3CF76-0F46-4C1D-B16B-4B7C3A773BCF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EE627FCB-B415-43B1-B0F4-5F0A8B1A3A4A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Skate_Roll_Slow" ID="{10ECE0E4-55C7-40FC-9832-98CC9D8D2343}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.461075450450451"/>
+										<Property Name="TrimEnd" Type="Real64" Value="11.7113164414414"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Skate\Skate_Roll_Slow.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="31388167"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Skate_Roll_Slow" ID="{10ECE0E4-55C7-40FC-9832-98CC9D8D2343}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Skate_Roll_Fast" ID="{B7B11070-901B-412E-B36E-196F91BAE6C1}" ShortID="460174758">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6BD3CF76-0F46-4C1D-B16B-4B7C3A773BCF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EE627FCB-B415-43B1-B0F4-5F0A8B1A3A4A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Skate_Roll_Fast" ID="{AC203A7E-CC8B-49DD-A18B-DEE840589F27}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.618849505755756"/>
+										<Property Name="TrimEnd" Type="Real64" Value="6.63617342342342"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Skate\Skate_Roll_Fast.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="695370563"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Skate_Roll_Fast" ID="{AC203A7E-CC8B-49DD-A18B-DEE840589F27}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Skate_Roll_Medium" ID="{2FD660F2-3181-4E46-BA63-9609B0BDFF60}" ShortID="470837304">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6BD3CF76-0F46-4C1D-B16B-4B7C3A773BCF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EE627FCB-B415-43B1-B0F4-5F0A8B1A3A4A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Skate_Roll_Medium" ID="{06B4E718-79C3-44E3-A523-97327F78713F}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.69559288455122"/>
+										<Property Name="TrimEnd" Type="Real64" Value="12.7169466341341"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Skate\Skate_Roll_Medium.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="741018606"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Skate_Roll_Medium" ID="{06B4E718-79C3-44E3-A523-97327F78713F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Skate_Roll_Fast" ID="{B7B11070-901B-412E-B36E-196F91BAE6C1}"/>
+								<PropertyList>
+									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Skate_Roll_Slow" ID="{638DF4E8-A5F1-42F7-BF70-4D06B2581E19}"/>
+								<PropertyList>
+									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Skate_Roll_Medium" ID="{2FD660F2-3181-4E46-BA63-9609B0BDFF60}"/>
+								<PropertyList>
+									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Medium" ID="{D252F091-F19C-4BD4-86E1-FB11D452B539}"/>
+								<ItemList>
+									<ItemRef Name="Skate_Roll_Medium" ID="{2FD660F2-3181-4E46-BA63-9609B0BDFF60}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Slow" ID="{43341D96-6358-4225-93BC-263E8E3F60AF}"/>
+								<ItemList>
+									<ItemRef Name="Skate_Roll_Slow" ID="{638DF4E8-A5F1-42F7-BF70-4D06B2581E19}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Fast" ID="{7C97DEA4-666B-4B1A-87B6-434795980C7C}"/>
+								<ItemList>
+									<ItemRef Name="Skate_Roll_Fast" ID="{B7B11070-901B-412E-B36E-196F91BAE6C1}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
