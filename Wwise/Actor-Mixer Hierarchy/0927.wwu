@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{23CF0E46-2E79-425A-99D6-E5C964AE4005}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="0927" ID="{23CF0E46-2E79-425A-99D6-E5C964AE4005}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Plugin" ID="{AC3E9C15-AA96-4007-8600-921ADE0820B4}" ShortID="1023817911">
+					<PropertyList>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6BD3CF76-0F46-4C1D-B16B-4B7C3A773BCF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EE627FCB-B415-43B1-B0F4-5F0A8B1A3A4A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Sine" ID="{3E85005F-9057-4ADB-B8A9-FFC1A3114F6E}" ShortID="831112239">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6BD3CF76-0F46-4C1D-B16B-4B7C3A773BCF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EE627FCB-B415-43B1-B0F4-5F0A8B1A3A4A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Sine" ID="{40CF49D1-3E8F-4407-B6F4-8F48AD5071A5}" ShortID="516851355" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{88F09D1F-56D5-462F-AFCB-688DEDAE2261}" ShortID="3398854">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="SineFrequency"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<Custom>
+																	<ModulatorTime Name="Modulator Time (Custom)" ID="{B63CBA72-AE73-4CE8-83A8-8DAA014DBF10}" ShortID="351712839">
+																		<ObjectLists>
+																			<ObjectList Name="RTPC">
+																				<Reference>
+																					<Local>
+																						<RTPC Name="" ID="{DD12E93C-E45D-4775-81DC-E375E532188A}" ShortID="618164274">
+																							<PropertyList>
+																								<Property Name="PropertyName" Type="string" Value="TimeModInitialDelay"/>
+																							</PropertyList>
+																							<ReferenceList>
+																								<Reference Name="ControlInput">
+																									<Custom>
+																										<ModulatorTime Name="Modulator Time (Custom)" ID="{A5EFB1F8-7BDA-4CCE-8312-A4C63F139AAF}" ShortID="666223061"/>
+																									</Custom>
+																								</Reference>
+																								<Reference Name="Curve">
+																									<Custom>
+																										<Curve Name="" ID="{E3C6F41B-C4D2-4FBF-9E2B-21BD94FE712B}">
+																											<PropertyList>
+																												<Property Name="Flags" Type="int32" Value="1"/>
+																											</PropertyList>
+																											<PointList>
+																												<Point>
+																													<XPos>0</XPos>
+																													<YPos>1.86458</YPos>
+																													<Flags>5</Flags>
+																												</Point>
+																												<Point>
+																													<XPos>1</XPos>
+																													<YPos>3.45833</YPos>
+																													<Flags>37</Flags>
+																												</Point>
+																											</PointList>
+																										</Curve>
+																									</Custom>
+																								</Reference>
+																							</ReferenceList>
+																						</RTPC>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</ModulatorTime>
+																</Custom>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{CECBD294-A5B9-4D66-97C0-8E92E9FF08C2}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="5"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>1795.88043</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>20</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sine" ID="{40CF49D1-3E8F-4407-B6F4-8F48AD5071A5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Synth one" ID="{8CB6465E-C64B-4806-91CD-F1F5DC2B80C0}" ShortID="466499831">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6BD3CF76-0F46-4C1D-B16B-4B7C3A773BCF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EE627FCB-B415-43B1-B0F4-5F0A8B1A3A4A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Synth One" ID="{03F5D057-0F8F-446B-8671-1F6D0AA6DC8B}" ShortID="893071415" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+									<PropertyList>
+										<Property Name="BaseFrequency" Type="Real32" Value="500"/>
+										<Property Name="NoiseLevel" Type="Real32" Value="-90"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Synth One" ID="{03F5D057-0F8F-446B-8671-1F6D0AA6DC8B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Wind" ID="{DF2CABD4-A372-4D78-AECA-05E1D6AEF942}" ShortID="548320450">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6BD3CF76-0F46-4C1D-B16B-4B7C3A773BCF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EE627FCB-B415-43B1-B0F4-5F0A8B1A3A4A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Soundseed Air Wind" ID="{E0F45DB1-F83A-4205-B3D6-045D1ABCBF21}" ShortID="559190056" PluginName="SoundSeed Air Wind" CompanyID="0" PluginID="119">
+									<PropertyList>
+										<Property Name="FrequencyScaleAutomate" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<PluginData>
+	<CurveList Version="1">
+		<CurveInfo Name="FrequencyScale">
+			<Curve Name="" ID="{B7E8840D-EC88-4F61-A54E-7040399340AE}">
+				<PropertyList>
+					<Property Name="Flags" Type="int32" Value="1"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>5</Flags>
+					</Point>
+					<Point>
+						<XPos>1.92893</XPos>
+						<YPos>1.56863</YPos>
+						<Flags>0</Flags>
+					</Point>
+					<Point>
+						<XPos>10</XPos>
+						<YPos>-0.70588</YPos>
+						<Flags>37</Flags>
+					</Point>
+				</PointList>
+			</Curve>
+		</CurveInfo>
+		<CurveInfo Name="Gustiness">
+			<Curve Name="" ID="{F00B7149-5FB4-4CB9-AD07-67C15BE58F45}">
+				<PropertyList>
+					<Property Name="Flags" Type="int32" Value="1"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>5</Flags>
+					</Point>
+					<Point>
+						<XPos>10</XPos>
+						<YPos>0.0098</YPos>
+						<Flags>37</Flags>
+					</Point>
+				</PointList>
+			</Curve>
+		</CurveInfo>
+	</CurveList>
+</PluginData>
+									<PluginInnerObjectList>
+										<List Name="Deflectors">
+											<PluginInnerObject Name="" ID="{ED5FF045-224E-4FCC-9539-6965C5A7F136}" PluginName="Deflector" CompanyID="0" PluginID="121">
+												<PropertyList>
+													<Property Name="PanX" Type="Real64" Value="4.88353946026676E-15"/>
+													<Property Name="PanY" Type="Real64" Value="-0.584795321637426"/>
+												</PropertyList>
+											</PluginInnerObject>
+										</List>
+									</PluginInnerObjectList>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Soundseed Air Wind" ID="{E0F45DB1-F83A-4205-B3D6-045D1ABCBF21}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Whoosh" ID="{AA55BDB2-104C-4196-A469-11FDFF7E0FF5}" ShortID="1069755458">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6BD3CF76-0F46-4C1D-B16B-4B7C3A773BCF}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Recorder (Custom)" ID="{A0E2936C-F9F7-4703-8104-54EDDB015914}" ShortID="790101162" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3"/>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EE627FCB-B415-43B1-B0F4-5F0A8B1A3A4A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Soundseed Air Woosh" ID="{CAA69CBE-9B81-4FCC-84B1-3BD215CF11B7}" ShortID="509679954" PluginName="SoundSeed Air Woosh" CompanyID="0" PluginID="120">
+									<PropertyList>
+										<Property Name="FrequencyScaleAutomate" Type="bool" Value="True"/>
+										<Property Name="QFactorScaleAutomate" Type="bool" Value="True"/>
+										<Property Name="SpeedAutomate" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<PluginData>
+	<WooshData>
+		<CurveList Version="1">
+			<CurveInfo Name="FrequencyScale">
+				<Curve Name="" ID="{24149986-E056-42C5-8E03-F48955311EFA}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.06007</XPos>
+							<YPos>1.4465</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.14044</XPos>
+							<YPos>-2.77183</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.5</XPos>
+							<YPos>-4</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="QFactorScale">
+				<Curve Name="" ID="{487553A7-6EEB-45EB-B9B0-B538A16C3343}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.1286</XPos>
+							<YPos>-0.01476</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.5</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="Speed">
+				<Curve Name="" ID="{4FC605AA-3A77-4005-9EF5-5B46065F95E6}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.06048</XPos>
+							<YPos>100</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.15371</XPos>
+							<YPos>17.50216</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.5</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+		<Path Version="1">
+			<Path2D Name="" ID="{112295FB-A47D-4DA8-A388-6071D9A8A218}">
+				<PropertyList>
+					<Property Name="LinearTime" Type="bool" Value="False"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>12</Flags>
+						<Time>0</Time>
+					</Point>
+				</PointList>
+			</Path2D>
+		</Path>
+	</WooshData>
+</PluginData>
+									<PluginInnerObjectList>
+										<List Name="Deflectors">
+											<PluginInnerObject Name="" ID="{33ACD13E-454B-4925-A7D1-A2B9AB745DE3}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
+										</List>
+									</PluginInnerObjectList>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Soundseed Air Woosh" ID="{CAA69CBE-9B81-4FCC-84B1-3BD215CF11B7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Impacter" ID="{8E6AF2D5-6155-42A3-9FB1-F454BFDA8A23}" ShortID="785599587">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6BD3CF76-0F46-4C1D-B16B-4B7C3A773BCF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EE627FCB-B415-43B1-B0F4-5F0A8B1A3A4A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Impacter" ID="{F46C189F-0BDF-4211-95F7-20411B7E3489}" ShortID="974897564" PluginName="Impacter" CompanyID="0" PluginID="184">
+									<PropertyList>
+										<Property Name="Mass" Type="Real32" Value="1.5"/>
+										<Property Name="NumFiles" Type="int32" Value="3"/>
+									</PropertyList>
+									<ChildrenList>
+										<PluginMediaSource Name="Metal, Impact, Drum, Thud x4 SND7032" ID="{7053CECD-A14F-41D7-B46D-13AD4FA85E5D}">
+											<ParentPluginID>12058626</ParentPluginID>
+											<PropertyList>
+												<Property Name="DataFileName" Type="string" Value="Metal, Impact, Drum, Thud x4 SND7032.wav"/>
+											</PropertyList>
+											<MediaIDList>
+												<MediaID ID="916903880"/>
+											</MediaIDList>
+										</PluginMediaSource>
+										<PluginMediaSource Name="Metal, Impact, Laundry Rack, Single Rattling Impact 06 SND86319" ID="{B3F4AC11-2E49-48EF-83DA-7F022641ECF0}">
+											<ParentPluginID>12058626</ParentPluginID>
+											<PropertyList>
+												<Property Name="DataFileName" Type="string" Value="Metal, Impact, Laundry Rack, Single Rattling Impact 06 SND86319.wav"/>
+											</PropertyList>
+											<MediaIDList>
+												<MediaID ID="791053021"/>
+											</MediaIDList>
+										</PluginMediaSource>
+										<PluginMediaSource Name="Bullets, Impact, Metal, Light SND6392" ID="{3EB66CD5-EE0E-49A6-823F-DABD0A035AEB}">
+											<ParentPluginID>12058626</ParentPluginID>
+											<PropertyList>
+												<Property Name="DataFileName" Type="string" Value="Bullets, Impact, Metal, Light SND6392.wav"/>
+											</PropertyList>
+											<MediaIDList>
+												<MediaID ID="786245650"/>
+											</MediaIDList>
+										</PluginMediaSource>
+									</ChildrenList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Impacter" ID="{F46C189F-0BDF-4211-95F7-20411B7E3489}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
